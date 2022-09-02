@@ -1,6 +1,7 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 // export default function Home() {
 //   return (
@@ -57,9 +58,9 @@ export default function Home() {
               All the Pokémon data you'll ever need in one place, easily
               accessible through a modern PokeApp.
             </p>
-            <a className={styles.btn} >
+            <Link className={styles.btn} >
               Explore now.
-            </a>
+            </Link>
           </div>
         </div>
       </main>
