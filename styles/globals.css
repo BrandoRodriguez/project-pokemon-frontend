@@ -2,25 +2,152 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-* {
+body {
+  font-family: "GT-Walsheim";
+}
+
+address,
+blockquote,
+body,
+button,
+code,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+table,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+:after,
+:before {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "GT-Walsheim";
+  src: url(/fonts/GT-Walsheim-Regular.woff2),
+    url(/fonts/GT-Walsheim-Regular.woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "GT-Walsheim";
+  src: url(/fonts/GT-Walsheim-Medium.woff2),
+    url(/fonts/GT-Walsheim-Medium.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "GT-Walsheim";
+  src: url(/fonts/GT-Walsheim-Bold.woff2),
+    url(/fonts/GT-Walsheim-Bold.woff);
+  font-weight: 700;
+}
+
+.bug {
+  background: #aedf78;
+}
+
+.water {
+  background: #43ccff;
+}
+
+.grass {
+  background: #00ca91;
+}
+
+.fire {
+  background: #e95c4d;
+}
+
+.normal {
+  background: #a5a5a5;
+}
+
+.poison {
+  background: #611380;
+}
+
+.electric {
+  background: #f9be00;
+}
+
+.ground {
+  background: #bfac21;
+}
+
+.fairy {
+  background: #f87ea7;
+}
+
+.fighting {
+  background: #e81319;
+}
+
+.psychic {
+  background: #8a0532;
+}
+
+.ghost {
+  background: #8e55a4;
+}
+
+.rock {
+  background: #776a3e;
+}
+
+.ice {
+  background: #66d1e5;
+}
+
+.flying {
+  background: #5eb9b2;
+}
+
+.dark {
+  background: #2d221c;
+}
+
+.dragon {
+  background: #29036a;
 }
