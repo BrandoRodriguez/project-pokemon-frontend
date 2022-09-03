@@ -8,8 +8,8 @@ export default function home({ minimimosDatos }) {
       <div className={styles.home}>
         <div className="container container_home">
           <ul className={styles.column_ul}>
-            {minimimosDatos.map((item) => (
-              <Card key={item.id}
+            {minimimosDatos.map((item, index) => (
+              <Card key={index}
                 name={item.name}
                 id={item.id}
                 img={item.sprites}
@@ -23,7 +23,7 @@ export default function home({ minimimosDatos }) {
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const Pokemons = async (Pokemon) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${Pokemon}?limit=16`)
     const data = await response.json()
