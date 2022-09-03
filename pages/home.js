@@ -23,7 +23,7 @@ export default function home({ minimimosDatos }) {
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const Pokemons = async (Pokemon) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${Pokemon}?limit=16`)
     const data = await response.json()

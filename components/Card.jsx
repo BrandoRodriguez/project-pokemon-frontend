@@ -1,4 +1,5 @@
 import styles from "../styles/Card.module.css";
+import Image from "next/image";
 
 export default function Card({ id, name, img, types }) {
   return (
@@ -16,13 +17,9 @@ export default function Card({ id, name, img, types }) {
           })}
         </div>
       </div>
-      <img
-        className={styles.imagen}
-        src={img}
-        alt="pokemon"
-        width="95px"
-        height="95px"
-      />
+      <span className={styles.imagen}>
+        <Image src={img} alt="pokemon" width="95px" height="95px" />
+      </span>
     </div>
   );
 }
