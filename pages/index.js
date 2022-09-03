@@ -1,21 +1,7 @@
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-// export default function Home() {
-//   return (
-//     <div className={styles.container}>
-
-
-//       <main className={styles.main}>
-//         <h1 className={styles.title}>
-//           Welcome to <a href="https://nextjs.org">Next.js!</a>
-//         </h1>
-//       </main>
-
-//     </div>
-//   )
-// }
 
 export default function Home() {
   <Head>
@@ -32,16 +18,17 @@ export default function Home() {
           </div>
           <>
             <div className={styles.nav}>
-              <a href="/" className={styles.ctn_logo}>
-                <img
-                  className={styles.nav_logo}
+              <span className={styles.ctn_logo}>
+                <Image
                   src="/images/logo.svg"
                   alt="@brandorodriguez"
+                  width={140}
+                  height={51}
                 />
-              </a>
-              <a className={styles.btn1} href="/">
-                <img src="/images/github.svg" alt="@brandorodriguez" />
-              </a>
+              </span>
+              <span className={styles.btn1}>
+                <Image src="/images/github.svg" alt="@brandorodriguez" width={28} height={28} />
+              </span>
             </div>
           </>
           <div className={styles.bg_title}>
@@ -57,9 +44,9 @@ export default function Home() {
               All the Pokémon data you'll ever need in one place, easily
               accessible through a modern PokeApp.
             </p>
-            {/* <a className={styles.btn} >
+            <span className={styles.btn} >
               Explore now.
-            </a> */}
+            </span>
           </div>
         </div>
       </main>
