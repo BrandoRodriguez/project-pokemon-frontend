@@ -151,3 +151,54 @@ video {
 .dragon {
   background: #29036a;
 }
+
+
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 94%;
+  height: 94%;
+  border-radius: 27px;
+  border: 2px solid #fefefd;
+}
+
+.container_LandingPage {
+  background: linear-gradient(118deg, #ffcb14 34.13%, #f7cf07 74.99%);
+  box-shadow: 0 100px 186px rgba(196, 159, 7, 0.68);
+}
+
+.container_home {
+  background: linear-gradient(108.99deg, #ef5661 34.13%, #fbbd37 74.99%);
+  overflow-y: auto;
+  box-shadow: 0 100px 186px rgba(196, 159, 7, 0.68);
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px;
+    height: 562.5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1160px;
+    height: 652.5px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1244px;
+    height: 700px;
+  }
+
+}

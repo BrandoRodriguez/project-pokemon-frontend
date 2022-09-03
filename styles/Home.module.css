@@ -1,244 +1,30 @@
-.nav {
-  display: flex;
-  padding-bottom: 20px;
-  justify-content: space-between;
-  position: absolute;
-  top: 20px;
-  left: 5%;
-  right: 50px;
-  width: 90%;
-}
-
-.ctn_logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.h1 {
-  color: #fff;
-  letter-spacing: 0.1rem;
-  font-size: 25px;
-  filter: drop-shadow(2px 2px 2px rgb(68, 1, 19, 0.2));
-}
-
-.landing_page {
+.home {
   position: relative;
   height: 100vh;
-  background: linear-gradient(118deg, #ffcb14 34.13%, #f7cf07 74.99%);
   align-items: center;
   display: flex;
   overflow: hidden;
+  background: linear-gradient(108.99deg, #ef5661 34.13%, #fbbd37 74.99%);
 }
 
-.container_landing_page {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  width: 94%;
-  height: 94%;
-  border-radius: 27px;
-  border: 2px solid #fefefd;
-  background: linear-gradient(118deg, #ffcb14 34.13%, #f7cf07 74.99%);
-  box-shadow: 0 100px 186px rgba(196, 159, 7, 0.68);
+.column_ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 17px;
+  gap: 17px;
+  list-style: none;
+  padding: 5%;
 }
 
-.hero_image_wrapper {
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-.pokemon {
-  background-image: url(/images/pokemon.png);
-  width: 100%;
-  position: absolute;
-  height: 100%;
+.filters_section {
   display: block;
-  background-size: cover;
-  max-width: 289px;
-  max-height: 303px;
-  top: 90px;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.bg_title {
-  position: absolute;
-  top: 18%;
-  left: 0;
-  right: 0;
-}
-
-.title {
-  text-align: center;
-  white-space: nowrap;
-  letter-spacing: -0.02em;
-  font-size: 200px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.content_wrapper {
-  position: absolute;
-  bottom: 40px;
-  left: 5%;
-  width: 90%;
-  z-index: 1;
-}
-
-.btn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 9999px;
-  background: #7c190f;
-  color: #fff;
-  font-size: 16px;
-}
-
-.badge {
-  letter-spacing: 1px;
-  color: #000;
-  margin-bottom: 1em;
-  align-items: center;
-  display: flex;
-  gap: 5px;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-.badge span {
-  padding: 3px 7px;
-  border-radius: 999px;
-  color: #fff;
-  background-color: #7c190f;
-}
-
-.h3 {
-  color: #7c190f;
-  font-size: 40px;
-  padding-bottom: 15px;
-}
-
-.btn1 {
-  border-radius: 100%;
-  align-items: center;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 6px;
-  background: #7c190f;
-  color: #fff;
-  z-index: 1;
-  position: relative;
-}
-
-.p {
-  color: #440113;
-  font-size: 16px;
-  margin-bottom: 45px;
-}
-
-@media (max-width: 768px) {
-  .bg_title {
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    left: calc(100% - -20px);
-    bottom: 15px;
-    top: auto;
-  }
-
-  .title {
-    font-size: 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav {
-    top: 40px;
-  }
-
-  .container_landing_page {
-    width: 1000px;
-    height: 562.5px;
-  }
-
-  .hero_image_wrapper {
-    height: 100%;
+@media (min-width: 900px) {
+  .filters_section {
     display: flex;
-    align-items: center;
-  }
-
-  .pokemon {
-    right: 70px;
-    max-width: 545px;
-    max-height: 603px;
-    top: -50px;
-  }
-
-  .content_wrapper {
-    position: absolute;
-    bottom: 70px;
-    left: 5%;
-    width: 40%;
-  }
-
-  .title {
-    font-size: 253px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container_landing_page {
-    width: 1160px;
-    height: 652.5px;
-  }
-
-  .title {
-    font-size: 294px;
-  }
-
-  .title::after {
-    content: "";
-    background: url(/images/pokemon1.png) no-repeat left;
-    width: 145px;
-    height: 138px;
-    z-index: 2;
-    position: absolute;
-    left: 40px;
-    top: 70px;
-    filter: drop-shadow(0 5px 9px rgb(48 7 7 / 15%));
-  }
-
-  .title::before {
-    content: "";
-    background: url(/images/pokemon2.png) no-repeat;
-    width: 110px;
-    height: 134px;
-    z-index: 2;
-    position: absolute;
-    top: 140px;
-    right: 35px;
-    filter: drop-shadow(0 5px 9px rgb(48 7 7 / 15%));
-  }
-
-  .pokemon {
-    max-width: 619px;
-    max-height: 660px;
-    right: 150px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container_landing_page {
-    width: 1244px;
-    height: 700px;
-  }
-
-  .title {
-    font-size: 315px;
   }
 }
