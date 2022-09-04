@@ -8,7 +8,8 @@ export default function home({ minimimosDatos }) {
       <div className={styles.home}>
         <div className="container container_home">
           <ul className={styles.column_ul}>
-            {minimimosDatos.map((item, index) => (
+            {minimimosDatos.length === 0 && <p>Loading ...</p>}
+            {minimimosDatos.length > 0 && minimimosDatos.map((item, index) => (
               <Card key={index}
                 name={item.name}
                 id={item.id}
