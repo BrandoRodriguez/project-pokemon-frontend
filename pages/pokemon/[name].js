@@ -46,8 +46,6 @@ export default function Pokemon({ data }) {
                                 width="200"
                                 height="200"
                             />
-
-
                         </div>
                     </div>
                     <div className={PokeCss.masInfo}>
